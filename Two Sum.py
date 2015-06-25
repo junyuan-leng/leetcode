@@ -3,7 +3,7 @@ class Solution:
     def twoSum(self, num, target):
         dict = {}
         for i in range(len(num)):
-            if dict.get(target-num[i], None) == None:
+            if dict.get(target - num[i], None) == None:
                 dict[num[i]] = i
             else:
-                return (dict[target-num[i]] + 1, i + 1)
+                return (dict[target - num[i]] + 1, i + 1)

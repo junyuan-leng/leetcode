@@ -1,12 +1,13 @@
 class Solution:
-# @return an integer
+    # @return an integer
     def reverse(self, x):
-    if (x == 0):
-        return 0
-    elif (x < 0):
-        flag = -1
-    else:
-        flag = 1
+
+        if (x == 0):
+            return 0
+        elif (x < 0):
+            flag = -1
+        else:
+            flag = 1
     x = abs(x)
     result = 0
     while (x >= 10):
